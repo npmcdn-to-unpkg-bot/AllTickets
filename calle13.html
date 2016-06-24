@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="ticketModuleApp">
+   <head>
+      <meta charset="UTF-8">
+      <title>Calle13</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.28/css/bulma.min.css">
+      <link rel="stylesheet" type="text/css" href="estilos.css">
+   </head>
+   <section class="hero is-primary is-medium">
+      <!-- Hero header: will stick at the top -->
+      <div class="hero-head">
+         <header class="nav" header-directive></header>
+      </div>
+   </section>
+   <body>
+      <br>
+      <nav class="nav has-shadow">
+         <div class="container">
+            <div class="nav-left">
+               <!-- <a class="nav-item is-tab is-active">Conciertos</a> -->
+               <a class="nav-item is-tab" href="conciertos.html">Conciertos</a>
+               <a class="nav-item is-tab" href="musicales.html">Musicales</a>
+               <a class="nav-item is-tab" href="futbol.html">Futbol</a>
+               <a class="nav-item is-tab" href="baloncesto.html">Baloncesto</a>
+               <a class="nav-item is-tab" href="festivales.html">Festivales</a>
+               <a class="nav-item is-tab" href="cine.html">Cine</a>
+               <a class="nav-item is-tab" href="teatro.html">Teatro</a>
+               <a class="nav-item is-tab" href="otros.html">Otros</a>
+            </div>
+         </div>
+      </nav>
+      <div class="contenido2">
+      <div class="card is-fullwidth">
+      <header class="card-header">
+         <p class="card-header-title">
+            Concierto
+         </p>
+         <a class="card-header-icon">
+         <i class="fa fa-angle-down"></i>
+         </a>
+      </header>
+      <div class="card-content">
+         <div class="content">
+            <article class="media">
+               <figure class="media-left">
+                  <p class="image is-300x300">
+                     <img src="conciertos/img4.jpg">
+                  </p>
+               </figure>
+               <div class="media-content">
+                  <div class="content">
+                     <p>
+                        <strong>Calle 13</strong>
+                        <br>
+                        Siguiendo con su gira mundial, habiendo recorrido más de 40 paises con distintas culturas y constumbres musicales, llegan a nuestro país para concluir hasta el año que viene con su gira "No me salpiques que me caigo" para presentarnos las nuevas canciones de su disco que están triunfando.
+                        Estos jovenes vienen con ganas de darlo todo y mostrarnos sus nuevos temas que tán solo en meses han triunfado en todo el mundo.
+                        <br>
+                        La banda se caracteriza por su estilo musical ecléctico, que mezcla estilos muy variados, tales como rap, rock, ska, merengue, bossa nova, música balcánica, reguetón alternativo, folclore latinoamericano, cumbia colombiana, cumbia villera, candombe, salsa, afrobeat, electrónica, entre otros, a menudo utilizando instrumentos no convencionales. En un primer momento se calificó a la banda como un grupo de reguetón, si bien pronto se desmarcan de este estilo. La banda también es conocida por sus letras satíricas, así como un comentario social sobre temas de cultura y política latinoamericana y actualidad mundial.
+                     </p>
+                  </div>
+                  <nav class="level">
+                     <div class="level-left">
+                        </a>
+                     </div>
+                  </nav>
+               </div>
+               <div class="media-right">
+                  <button class="delete"></button>
+               </div>
+            </article>
+            <br>
+            <small>Jueves 24 de Junio - 20:00</small>
+            <br>
+            <small>Barclays Center</small>
+         </div>
+      </div>
+      <footer class="card-footer">
+         <a class="card-footer-item">+ Info</a>
+         <a class="card-footer-item" a href="#openModal">Vender</a>
+         <a class="card-footer-item" id="myBtn">Comprar</a>
+         <!-- The Modal -->
+         <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+               <table class="table">
+                  <thead>
+                     <tr>
+                        <th>Lugar</th>
+                        <th>Zona</th>
+                        <th>Entradas</th>
+                        <th></th>
+                     </tr>
+                  </thead>
+                  <tfoot>
+                     <tr>
+                        <th>Lugar</th>
+                        <th>Zona</th>
+                        <th>Entradas</th>
+                        <th></th>
+                     </tr>
+                  </tfoot>
+                  <tbody>
+                     <tr>
+                        <td>Barclays Center (Madrid)</td>
+                        <td>
+                           <p class="control">
+                              <span class="select">
+                                 <select>
+                                    <option>Pista</option>
+                                    <option>Grada baja-N</option>
+                                    <option>Grada baja-E</option>
+                                    <option>Grada baja-O</option>
+                                    <option>Grada media-N</option>
+                                    <option>Grada media-E</option>
+                                    <option>Grada media-O</option>
+                                    <option>Grada alta-N</option>
+                                    <option>Grada alta-E</option>
+                                    <option>Grada alta-O</option>
+                                    <option>Palgo VIP</option>
+                                 </select>
+                              </span>
+                           </p>
+                        </td>
+                        <td class="is-icon">
+                           <a href="#">
+                              <p class="control">
+                                 <span class="select">
+                                    <select>
+                                       <option>1</option>
+                                       <option>2</option>
+                                       <option>3</option>
+                                       <option>4</option>
+                                       <option>5</option>
+                                       <option>6</option>
+                                       <option>7</option>
+                                       <option>8</option>
+                                       <option>9</option>
+                                    </select>
+                                 </span>
+                              </p>
+                           </a>
+                        </td>
+                        <td class="is-icon">
+                           <a href="#">
+                           <a class="button is-success com" href="javascript:mostrarVentana();">Comprar</a>
+                           <div id="miVentana" class="content2">
+                              <div id="pop">Compra realizada correctamente</div>
+                              <p id="p">La compra de sus entradas ha sido realizada correctamente.<br>
+                                 En breve recibirá un e-mail con las entradas que deberá imprimir y presentar en el sitio.
+                              </p>
+                              <div id="rar">
+                                 <input id="btnAceptar" onclick="ocultarVentana();" name="btnAceptar" size="20" type="button" value="Aceptar" />
+                                 </a>
+                        </td>
+                     </tr>
+                     <tr>
+                     <td>Vicente Calderón (Madrid)</td>
+                     <td><p class="control">
+                     <span class="select">
+                     <select>
+                     <option>Pista</option>
+                     <option>Grada baja-N</option>
+                     <option>Grada baja-E</option>
+                     <option>Grada baja-O</option>
+                     <option>Grada media-N</option>
+                     <option>Grada media-E</option>
+                     <option>Grada media-O</option>
+                     <option>Grada alta-N</option>
+                     <option>Grada alta-E</option>
+                     <option>Grada alta-O</option>
+                     <option>Palgo VIP</option>
+                     </select>
+                     </span>
+                     </p></td>
+                     <td class="is-icon">
+                     <a href="#">
+                     <p class="control">
+                     <span class="select">
+                     <select>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                     <option>6</option>
+                     <option>7</option>
+                     <option>8</option>
+                     <option>9</option>
+                     </select>
+                     </span>
+                     </p>
+                     </a>
+                     </td>
+                     <td class="is-icon">
+                     <a href="#">
+                     <a class="button is-success com">comprar</a>
+                     </a>
+                     </td>
+                     </tr>
+                     <tr>
+                     <td>Plaza de Toros (Toledo)</td>
+                     <td><p class="control">
+                     <span class="select">
+                     <select>
+                     <option>Pista</option>
+                     <option>Grada baja-N</option>
+                     <option>Grada baja-E</option>
+                     <option>Grada baja-O</option>
+                     <option>Grada media-N</option>
+                     <option>Grada media-E</option>
+                     <option>Grada media-O</option>
+                     <option>Grada alta-N</option>
+                     <option>Grada alta-E</option>
+                     <option>Grada alta-O</option>
+                     <option>Palgo VIP</option>
+                     </select>
+                     </span>
+                     </p></td>
+                     <td class="is-icon">
+                     <a href="#">
+                     <p class="control">
+                     <span class="select">
+                     <select>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                     <option>6</option>
+                     <option>7</option>
+                     <option>8</option>
+                     <option>9</option>
+                     </select>
+                     </span>
+                     </p>
+                     </a>
+                     </td>
+                     <td class="is-icon">
+                     <a href="#">
+                     <a class="button is-success com">Comprar</a>
+                     </a>
+                     </td>
+                     </tr>
+                     <tr>
+                     <td>Hurracachula (Cadiz)</td>
+                     <td><p class="control">
+                     <span class="select">
+                     <select>
+                     <option>Pista</option>
+                     <option>Grada baja-N</option>
+                     <option>Grada baja-E</option>
+                     <option>Grada baja-O</option>
+                     <option>Grada media-N</option>
+                     <option>Grada media-E</option>
+                     <option>Grada media-O</option>
+                     <option>Grada alta-N</option>
+                     <option>Grada alta-E</option>
+                     <option>Grada alta-O</option>
+                     <option>Palgo VIP</option>
+                     </select>
+                     </span>
+                     </p></td>
+                     <td class="is-icon">
+                     <a href="#">
+                     <p class="control">
+                     <span class="select">
+                     <select>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                     <option>6</option>
+                     <option>7</option>
+                     <option>8</option>
+                     <option>9</option>
+                     </select>
+                     </span>
+                     </p>
+                     </a>
+                     </td>
+                     <td class="is-icon">
+                     <a href="#">
+                     <a class="button is-success com">Comprar</a>
+                     </a>
+                     </td>
+                     </tr>
+                  </tbody>
+               </table>
+               </div>
+               </div>
+               <div id="openModal" class="modalDialog">
+                  <div>
+                     <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th>Lugar</th>
+                              <th>Zona</th>
+                              <th>Entradas</th>
+                              <th></th>
+                           </tr>
+                        </thead>
+                        <tfoot>
+                           <tr>
+                              <th>Lugar</th>
+                              <th>Zona</th>
+                              <th>Entradas</th>
+                              <th></th>
+                           </tr>
+                        </tfoot>
+                        <tbody>
+                           <tr>
+                              <td>Barclays Center (Madrid)</td>
+                              <td>
+                                 <p class="control">
+                                    <span class="select">
+                                       <select>
+                                          <option>Pista</option>
+                                          <option>Grada baja-N</option>
+                                          <option>Grada baja-E</option>
+                                          <option>Grada baja-O</option>
+                                          <option>Grada media-N</option>
+                                          <option>Grada media-E</option>
+                                          <option>Grada media-O</option>
+                                          <option>Grada alta-N</option>
+                                          <option>Grada alta-E</option>
+                                          <option>Grada alta-O</option>
+                                          <option>Palgo VIP</option>
+                                       </select>
+                                    </span>
+                                 </p>
+                              </td>
+                              <td class="is-icon">
+                                 <a href="#">
+                                    <p class="control">
+                                       <span class="select">
+                                          <select>
+                                             <option>1</option>
+                                             <option>2</option>
+                                             <option>3</option>
+                                             <option>4</option>
+                                             <option>5</option>
+                                             <option>6</option>
+                                             <option>7</option>
+                                             <option>8</option>
+                                             <option>9</option>
+                                          </select>
+                                       </span>
+                                    </p>
+                                 </a>
+                              </td>
+                              <td class="is-icon">
+                                 <a href="#">
+                                 <a class="button is-success com">Vender</a>
+                                 </a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Vicente Calderón (Madrid)</td>
+                              <td>
+                                 <p class="control">
+                                    <span class="select">
+                                       <select>
+                                          <option>Pista</option>
+                                          <option>Grada baja-N</option>
+                                          <option>Grada baja-E</option>
+                                          <option>Grada baja-O</option>
+                                          <option>Grada media-N</option>
+                                          <option>Grada media-E</option>
+                                          <option>Grada media-O</option>
+                                          <option>Grada alta-N</option>
+                                          <option>Grada alta-E</option>
+                                          <option>Grada alta-O</option>
+                                          <option>Palgo VIP</option>
+                                       </select>
+                                    </span>
+                                 </p>
+                              </td>
+                              <td class="is-icon">
+                                 <a href="#">
+                                    <p class="control">
+                                       <span class="select">
+                                          <select>
+                                             <option>1</option>
+                                             <option>2</option>
+                                             <option>3</option>
+                                             <option>4</option>
+                                             <option>5</option>
+                                             <option>6</option>
+                                             <option>7</option>
+                                             <option>8</option>
+                                             <option>9</option>
+                                          </select>
+                                       </span>
+                                    </p>
+                                 </a>
+                              </td>
+                              <td class="is-icon">
+                                 <a href="#">
+                                 <a class="button is-success com">Vender</a>
+                                 </a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Plaza de Toros (Toledo)</td>
+                              <td>
+                                 <p class="control">
+                                    <span class="select">
+                                       <select>
+                                          <option>Pista</option>
+                                          <option>Grada baja-N</option>
+                                          <option>Grada baja-E</option>
+                                          <option>Grada baja-O</option>
+                                          <option>Grada media-N</option>
+                                          <option>Grada media-E</option>
+                                          <option>Grada media-O</option>
+                                          <option>Grada alta-N</option>
+                                          <option>Grada alta-E</option>
+                                          <option>Grada alta-O</option>
+                                          <option>Palgo VIP</option>
+                                       </select>
+                                    </span>
+                                 </p>
+                              </td>
+                              <td class="is-icon">
+                                 <a href="#">
+                                    <p class="control">
+                                       <span class="select">
+                                          <select>
+                                             <option>1</option>
+                                             <option>2</option>
+                                             <option>3</option>
+                                             <option>4</option>
+                                             <option>5</option>
+                                             <option>6</option>
+                                             <option>7</option>
+                                             <option>8</option>
+                                             <option>9</option>
+                                          </select>
+                                       </span>
+                                    </p>
+                                 </a>
+                              </td>
+                              <td class="is-icon">
+                                 <a href="#">
+                                 <a class="button is-success com">Vender</a>
+                                 </a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Hurracachula (Cadiz)</td>
+                              <td>
+                                 <p class="control">
+                                    <span class="select">
+                                       <select>
+                                          <option>Pista</option>
+                                          <option>Grada baja-N</option>
+                                          <option>Grada baja-E</option>
+                                          <option>Grada baja-O</option>
+                                          <option>Grada media-N</option>
+                                          <option>Grada media-E</option>
+                                          <option>Grada media-O</option>
+                                          <option>Grada alta-N</option>
+                                          <option>Grada alta-E</option>
+                                          <option>Grada alta-O</option>
+                                          <option>Palgo VIP</option>
+                                       </select>
+                                    </span>
+                                 </p>
+                              </td>
+                              <td class="is-icon">
+                                 <a href="#">
+                                    <p class="control">
+                                       <span class="select">
+                                          <select>
+                                             <option>1</option>
+                                             <option>2</option>
+                                             <option>3</option>
+                                             <option>4</option>
+                                             <option>5</option>
+                                             <option>6</option>
+                                             <option>7</option>
+                                             <option>8</option>
+                                             <option>9</option>
+                                          </select>
+                                       </span>
+                                    </p>
+                                 </a>
+                              </td>
+                              <td class="is-icon">
+                                 <a href="#">
+                                 <a class="button is-success com">Vender</a>
+                                 </a>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+      </footer>
+      </div>
+      </div>
+      <footer class="footer" footer-directive></footer>
+   </body>
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   <script src="./lib/angular.min.js"></script>  
+   <script type="text/javascript" src="scripts/directives.js"></script>
+   <script type="text/javascript" src="app.js"></script>
+</html>

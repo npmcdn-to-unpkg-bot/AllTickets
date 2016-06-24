@@ -1,0 +1,17 @@
+callback(
+{
+"users":
+[{
+    "name": "marina",
+    "password": "marina"
+},
+{
+    "name": "juanma",
+    "password": "juanma"
+},
+{
+    "name": "raul",
+    "password": "raul"
+}]
+}
+)

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="ticketModuleApp">
+   <head>
+      <meta charset="UTF-8">
+      <title>Tickets</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.28/css/bulma.min.css">
+      <link rel="stylesheet" type="text/css" href="estilos.css">
+   </head>
+   <section class="hero is-primary is-medium">
+      <!-- Hero header: will stick at the top -->
+      <div class="hero-head">
+         <header class="nav" header-directive></header>
+      </div>
+   </section>
+   <body>
+      <!-- <center> -->
+      <div class="form4">
+         <div class='container form-center'>
+            <br/>
+            <div class="form-div" data-ng-controller='formController'>
+               <form name='contactForm'>
+                  <div class='form-group'>
+                     <label for="name" class="form-name">Nombre</label></br>
+                     <input type="text" class='form-control name-input input-log' style="text-align:center;" placeholder='Nombre' 
+                        name='name' data-ng-model='formData.name' required 
+                        data-ng-class='{ error: exampleForm.name.$invalid && !exampleForm.$pristine }'>
+                  </div>
+                  <br>
+                  <div class='form-group'>
+                     <label for="lastname" class="form-letters">Apellido</label></br>
+                     <input type="text" style="text-align:center;" maxlength="40" placeholder='Apellido' 
+                        name='lastname' required>
+                  </div>
+                  <br>
+                  <div class='form-group'>
+                     <label for="email" class="form-letters">Email</label></br>
+                     <input type="text" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" name="email" style="text-align:center;" placeholder='ejemplo@email.com' required/>
+                  </div>
+                  <br>
+                  <div class='form-group'>
+                     <label for="msj" class="form-letters">Mensaje</label></br>
+                     <textarea type="text" class="form-control input-log" style="text-align:center;" rows="10" cols="40" ></textarea>
+                     <br>
+                     Compruebe sus datos antes de continuar
+                     <br>
+                     <input name="suscribir" type="checkbox" value="suscribir" checked="checked"/> Suscribirme al boletín de novedades
+                     <br>
+                     <br>
+                     <input type="submit" class='btn btn-success pull-right' 
+                        data-ng-click='submitForm(formData)' data-ng-enabled='!exampleForm.$valid'>
+                     <input type="reset" name="limpiar" class="btn btn-default btn-md" value="Borrar los datos introducidos" />
+                  </div>
+               </form>
+               <br>
+            </div>
+         </div>
+      </div>
+      <div 
+         class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.614348095164!2d-3.691205584602705!3d40.461671879359905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42291a4a992797%3A0x841e7e5325bcf405!2sPaseo+de+la+Castellana%2C+194%2C+28046+Madrid!5e0!3m2!1ses!2ses!4v1466581490927" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <!-- </center> -->
+      <a class="help" href="./help/index.html">
+         <div class="inbenta-banner " style="bottom: 0px;left: 40px;">
+            ¿Necesitas ayuda?  
+      </a>
+      </div>
+      <footer class="footer" footer-directive></footer>
+   </body>
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   <script src="./lib/angular.min.js"></script>  
+   <script type="text/javascript" src="scripts/directives.js"></script>
+</html>
