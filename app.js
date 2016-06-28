@@ -1,6 +1,3 @@
-
-
-
 var name; //variable donde tu guardas el usuario, está fuera para que sea global.
 $('.button').on('click', function(event){
     event.preventDefault();
@@ -88,9 +85,6 @@ $('dl dd').hide();
        });
 
 //acaba texto desplegable
-
-
-
 
 
 

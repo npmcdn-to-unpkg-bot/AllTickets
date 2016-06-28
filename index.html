@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <title>Login</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.28/css/bulma.min.css">
+      <link rel="stylesheet" href="./bulma/css/bulma.css">
       <link rel="stylesheet" type="text/css" href="estilos.css">
    </head>
    <section class="hero is-primary is-medium">
@@ -14,7 +14,7 @@
             <div class="container">
                <div class="nav-left">
                   <a class="nav-item">
-                     <h1 class="logo">AllTickets</h1>
+                  <div class="logo1"><img src="logo1ok.png"></div>
                   </a>
                </div>
                <span class="nav-toggle">
@@ -40,23 +40,11 @@
          </header>
       </div>
    </section>
-   <body>
-      <br>
-      <nav class="nav has-shadow">
-         <div class="container">
-            <div class="nav-left">
-               <div class="texto">
-                  <h1>Debes estar registrado</h1>
-                  <p>Para acceder a esta página web tienes que estar registrado en nuestros servidores, o si ya tienes una cuenta haz login.</p>
-               </div>
-            </div>
-         </div>
-      </nav>
+   <div class="columns">
+  <div class="column1">
       <!-- registro -->
-      <div class="container-fluid contenedor">
-         <div class="medio">
             <div class="izq-vende">
-               <h1 class="grande">Registro</h1>
+               <h1 class="grande"></h1>
                <label class="label">Nombre</label>
                <p class="control">
                   <input class="input" type="text" placeholder="Nombre">
@@ -73,6 +61,7 @@
                   <input class="input is-danger" type="text" placeholder="e-mail" value="">
                   <br>
                   <br>
+                  </p>
                   <label class="label">Confirmar correo</label>
                <p class="control has-icon has-icon-right">
                   <input class="input is-danger" type="text" placeholder="e-mail" value="">
@@ -107,9 +96,11 @@
                </p>
             </div>
             <!-- acaba registro -->
-            <!-- empieza login -->
-            <div class="dcha-vende ">
-               <h1 class="grande">Login</h1>
+
+</div>
+  <div class="column2">
+    <!-- empieza login -->
+            <div class="login">
                <p class="control has-icon">
                   <input id="email" class="input" type="email" placeholder="Email">
                   <i class="fa fa-envelope"></i>
@@ -125,12 +116,71 @@
                   </button>
                </p>
             </div>
-            <div class="clear"></div>
+            <!-- acaba login -->
+            <div class="frases">
+               
+               <h1 class="text">AllTickets te pone en contacto con personas de cualquier otro país para que puedas comprar y vender entradas.</h1>
+               <br>
+               <br>
+               <h1 class="text">¿Has comprado entradas para un concierto,musical,festival,teatro... al que no puedes asistir?
+               ¡Vende aquí tus entradas!</h1>
+
+            </div>
+  </div>
+   <!-- <body class="bd"> -->
+      <br>
+      <!-- <nav class="nav has-shadow">
+         <div class="container">
+            <div class="nav-left">
+               <div class="texto">
+                  <h1>Debes estar registrado</h1>
+                  <p>Para acceder a esta página web tienes que estar registrado en nuestros servidores, o si ya tienes una cuenta haz login.</p>
+               </div>
+            </div>
          </div>
+      </nav> -->
+         <!-- <div class=uno> -->
+            
+               
+         <!-- </div>
+         
+         </div>
+         </div> -->
+
+         <!-- <div class="dos">
+            
+            <div class="login">
+         <p class="control has-icon">
+                  <input id="email" class="input" type="email" placeholder="Email">
+                  <i class="fa fa-envelope"></i>
+               </p>
+         <p class="control has-icon">
+                  <input id="password" class="input" type="password" placeholder="Password">
+                  <i class="fa fa-lock"></i>
+               </p>
+               <p class="control ce">
+                  <button id="boton" class="button is-success">
+                  Login
+                  </button>
+               </p>
       </div>
+
+         </div> -->
+      
+
+
+
+      
+            
+
+            <div class="clear"></div>
+         
+      </div>
+
       <footer class="footer" footer-directive></footer>
    </body>
-   <script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
    <script src="./lib/angular.min.js"></script>  
    <script type="text/javascript" src="scripts/directives.js"></script>
    <script type="text/javascript" src="app.js"></script>
